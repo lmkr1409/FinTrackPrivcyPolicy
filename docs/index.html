@@ -215,8 +215,12 @@
             <p>We process the following data locally on your device to provide expense tracking services:</p>
             <ul>
                 <li><strong>SMS Messages:</strong> With your explicit permission (<code>READ_SMS</code> and
-                    <code>RECEIVE_SMS</code>), the app reads incoming financial SMS messages (e.g., transaction alerts
-                    from banks) to automatically categorize your spending.</li>
+                    <code>RECEIVE_SMS</code>), the app monitors incoming messages for specific financial sender patterns
+                    (e.g., bank identifiers like "HDFCBK"). <strong>The app only processes messages that match these
+                    pre-defined or user-selected sender patterns.</strong> If a message does not match a financial
+                    sender, it is immediately discarded and its content is never read or stored. Personal messages
+                    are strictly ignored. You have full control to enable or disable specific senders within the
+                    app's settings.</li>
                 <li><strong>Manual Entries:</strong> Any financial data or notes you manually enter into the app.</li>
             </ul>
             <p style="margin-top:12px;"><strong>Lawful Basis for Processing:</strong> We process this data based on your
@@ -226,7 +230,29 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">3</span> Local Storage Only</h2>
+            <h2><span class="section-num">3</span> Prominent Disclosure &amp; User Consent</h2>
+            <p>Before requesting SMS permissions, FinTrack displays a <strong>Prominent Disclosure</strong> screen
+                within the app that clearly explains:</p>
+            <ul>
+                <li><strong>What is accessed:</strong> Incoming SMS messages, specifically filtering for financial
+                    sender IDs (e.g., bank alerts).</li>
+                <li><strong>Why it is accessed:</strong> To automatically detect and categorize financial transactions
+                    from bank and payment service alerts. <strong>Only messages from recognized financial senders
+                    are processed; personal messages are discarded without being read.</strong></li>
+                <li><strong>How it is used:</strong> Data is processed locally on your device only; no SMS content is
+                    transmitted to any server or third party. You can customize the list of allowed senders at
+                    any time.</li>
+            </ul>
+            <p style="margin-top:12px;">You must explicitly tap <strong>"Allow"</strong> on this disclosure screen
+                before the system permission prompt appears. You may decline at any time; the app remains functional
+                with manual entry only. You can revoke this permission at any time via <strong>Settings &gt; Apps &gt;
+                FinTrack &gt; Permissions</strong>.</p>
+        </section>
+
+        <hr class="divider" />
+
+        <section>
+            <h2><span class="section-num">4</span> Local Storage Only</h2>
             <ul>
                 <li><strong>No Server Transmission:</strong> All personal and financial data is stored exclusively in a
                     local database on your mobile device.</li>
@@ -240,7 +266,7 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">4</span> No Third-Party Tracking</h2>
+            <h2><span class="section-num">5</span> No Third-Party Tracking</h2>
             <ul>
                 <li><strong>Analytics:</strong> We do not use third-party digital analytics software (such as Google
                     Analytics or Mixpanel) to track your behavior.</li>
@@ -252,7 +278,7 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">5</span> Data Retention</h2>
+            <h2><span class="section-num">6</span> Data Retention</h2>
             <ul>
                 <li><strong>Indefinite Local Storage:</strong> Your transaction data and personal information remain in
                     the app's local database for as long as the application is installed on your device. FinTrack does
@@ -268,7 +294,7 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">6</span> Your Rights (DPDP Act &amp; GDPR)</h2>
+            <h2><span class="section-num">7</span> Your Rights (DPDP Act &amp; GDPR)</h2>
             <p>Under the DPDP Act, 2023, you have the following rights:</p>
             <ul>
                 <li><strong>Right to Access:</strong> You can view all stored data within the app interface.</li>
@@ -283,16 +309,19 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">7</span> Security</h2>
-            <p>We implement reasonable security measures provided by your mobile operating system to protect the local
-                database from unauthorized access. However, please secure your device with a PIN, pattern, or biometric
-                lock to prevent physical access to your data.</p>
+            <h2><span class="section-num">8</span> Security</h2>
+            <p>The local database is protected via Android's internal storage security and system-level encryption.
+                App data is stored in the application's private directory, which is inaccessible to other apps without
+                root access. We implement all reasonable security measures provided by the mobile operating system
+                to protect this data from unauthorized access.</p>
+            <p>However, physical device security remains your responsibility. Please secure your device with a PIN,
+                pattern, or biometric lock to prevent unauthorized physical access to your data.</p>
         </section>
 
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">8</span> Children's Privacy</h2>
+            <h2><span class="section-num">9</span> Children's Privacy</h2>
             <p>Our Service is not intended for use by children under the age of 18 (or the legal age in your
                 jurisdiction).</p>
             <ul>
@@ -311,7 +340,7 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">9</span> Changes to this Privacy Policy</h2>
+            <h2><span class="section-num">10</span> Changes to this Privacy Policy</h2>
             <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
                 Privacy Policy on this page.</p>
             <p>We will let you know via a prominent notice within the Application, prior to the change becoming
@@ -323,7 +352,7 @@
         <hr class="divider" />
 
         <section>
-            <h2><span class="section-num">10</span> Contact Us</h2>
+            <h2><span class="section-num">11</span> Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, you can contact us:</p>
             <div class="highlight-box">
                 <p style="margin:0;">By email: <a class="contact-link"
